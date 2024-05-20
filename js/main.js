@@ -177,11 +177,11 @@
 
 	// Animations
 
-	// About Us
-	var aboutAnimate = function() {
+	// historical Us
+	var historicalAnimate = function() {
 
-		if ( $('#about-us').length > 0 ) {	
-			$('#about-us .to-animate').each(function( k ) {
+		if ( $('#historical-background').length > 0 ) {	
+			$('#historical-background .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -193,15 +193,15 @@
 		}
 
 	};
-	var aboutWayPoint = function() {
+	var historicalWayPoint = function() {
 
-		if ( $('#about-us').length > 0 ) {
-			$('#about-us').waypoint( function( direction ) {
+		if ( $('#historical-background').length > 0 ) {
+			$('#historical-background').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this).hasClass('animated') ) {
 
 
-					setTimeout(aboutAnimate, 200);
+					setTimeout(historicalAnimate, 200);
 
 					
 					$(this.element).addClass('animated');
@@ -484,7 +484,7 @@
 		windowScroll();
 		navigationSection();
 
-		aboutWayPoint();
+		historicalWayPoint();
 		teamWayPoint();
 		servicesWayPoint();
 		featuresWayPoint();
@@ -497,3 +497,16 @@
 
 
 }());
+
+// Video popup
+document.querySelector('.video-player').onclick = (event) => {
+    event.preventDefault();
+    const videoUrl = 'https://www.youtube.com/embed/AgPiStttxGk?&autoplay=1';
+    document.querySelector('.popup-video').style.display = 'block';
+    document.querySelector('.popup-video iframe').src = videoUrl;
+};
+
+document.querySelector('.popup-video span').onclick = () => {
+    document.querySelector('.popup-video').style.display = 'none';
+    document.querySelector('.popup-video iframe').src = '';
+};
