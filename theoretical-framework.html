@@ -41,23 +41,62 @@
 		<header role="banner" id="fh5co-header">
 				<div class="container">
 					<nav class="navbar navbar-default">
-                        <div class="navbar-header">
-                            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                            <a class="navbar-brand" href="index.html">5Nurses-Informatique</a> 
-                        </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
-                            <li><a href="#" data-nav-section="about"><span>History</span></a></li>
-                            <li><a href="#" data-nav-section="services"><span>Theory</span></a></li>
-                            <li><a href="#" data-nav-section="features"><span>Components</span></a></li>
-                            <li><a href="#" data-nav-section="pricing"><span>Applications</span></a></li>
-                            <li><a href="#" data-nav-section="press"><span>Trends</span></a></li>
-                        </ul>
-                        </div>
+						<div class="navbar-header">
+							<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+							<a class="navbar-brand" href="index.html">5Nurses-Informatique</a> 
+						</div>
+						<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+							<li><a href="#" data-nav-section="about"><span>Theoretical Framework</span></a></li>
+						</ul>
+						</div>
 					</nav>
 			</div>
 		</header>
+
+		<div id="slider" data-section="home">
+			<div class="owl-carousel owl-carousel-fullwidth">
+				<div class="item" style="background-color: #8d3fcf;">
+					<div class="overlay"></div>
+					<div class="container" style="position: relative;">
+						<div class="row">
+							<!--<video autoplay muted loop id="myVideo" class="layer">
+								<source src="video\Informatics Video.mp4" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>-->
+							<div class="col-md-8 col-md-offset-2 text-center">
+								<div class="fh5co-owl-text-wrap">
+									<div class="fh5co-owl-text">
+										<h1 class="fh5co-lead to-animate">LEARN MORE ABOUT HEALTH INFORMATICS</h1>
+										<h2 class="fh5co-sub-lead to-animate">By 5Nurses-Informatique</h2>
+										<p class="to-animate-2"><a href="https://drive.google.com/file/d/1e_F22XPTh2VbaUgrruxuiJxRo6GCMHu_/view?usp=sharing" class="btn btn-primary btn-lg glightbox">Watch This Video</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-color: #223ccf;">
+					<div class="container" style="position: relative;">
+						<div class="row">
+							<div class="col-md-7 col-sm-7">
+								<div class="fh5co-owl-text-wrap">
+									<div class="fh5co-owl-text">
+										<h1 class="fh5co-lead to-animate">WHAT IS HEALTH INFORMATICS?</h1>
+										<h2 class="fh5co-sub-lead to-animate">Health informatics is a multidisciplinary field that leverages technology to collect, manage, and analyze health data, ultimately enhancing patient care and fostering the development of innovative healthcare solutions (Sutner & DelVecchio, 2018; Wired, 2024).</h2>
+										<p class="to-animate-2"><a href="#" class="btn btn-primary btn-lg">Learn More</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
+								<div class="iphone to-animate-2"><img src="images/iphone-2.png" alt="#"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div id="fh5co-about-us" data-section="about">
 			<div class="container">
@@ -75,16 +114,16 @@
 					</div>
 					<div class="col-md-6 to-animate">
 						<h2>A. Data Management</h2>
-						<p>Data management in healthcare informatics involves acquiring, storing, organizing, and analyzing data to extract meaningful insights and support decision-making processes. This includes:
+						<p style="text-align: justify;">Data management in healthcare informatics involves acquiring, storing, organizing, and analyzing data to extract meaningful insights and support decision-making processes. This includes:
 						</p>
                         <ul>
-                            <li>Data Acquisition: Collecting raw data from various sources.</li>
-                            <li>Data Storage: Organizing data in databases and data warehouses.</li>
-                            <li>Data Processing: Defining schemas, performing quality checks, and mapping data for integration.</li>
-                            <li>Data Analysis: Using analytics to derive insights and ensure data interoperability.</li>
-                            <li>Data Lineage: Maintaining traceability and reproducibility of analyses.</li>  
+                            <li style="text-align: justify;">Data Acquisition: Collecting raw data from various sources.</li>
+                            <li style="text-align: justify;">Data Storage: Organizing data in databases and data warehouses.</li>
+                            <li style="text-align: justify;">Data Processing: Defining schemas, performing quality checks, and mapping data for integration.</li>
+                            <li style="text-align: justify;">Data Analysis: Using analytics to derive insights and ensure data interoperability.</li>
+                            <li style="text-align: justify;">Data Lineage: Maintaining traceability and reproducibility of analyses.</li>  
                         </ul>
-                        <p>According to Siddiqi et al. (2023), managing data in a unified format within a clinical data lakehouse supports both static and real-time data, capturing changes over time.</p>
+                        <p style="text-align: justify;">According to Siddiqi et al. (2023), managing data in a unified format within a clinical data lakehouse supports both static and real-time data, capturing changes over time.</p>
 					</div>
 				</div>
 			</div>
@@ -93,14 +132,14 @@
 				<div class="row row-bottom-padded-lg">
 					<div class="col-md-8 to-animate">
 						<h2>B. Information Systems</h2>
-						<p>Information systems are crucial for managing, processing, and disseminating data within healthcare organizations. They:
+						<p style="text-align: justify;">Information systems are crucial for managing, processing, and disseminating data within healthcare organizations. They:
 						</p>
                         <ul>
-                            <li>Integrate Disparate Data Sources: Facilitate seamless data integration.</li>
-                            <li>Support Data Analysis: Enable comprehensive data analysis.</li>
-                            <li>Aid Decision-Making: Provide tools for informed decision-making.</li>
+                            <li style="text-align: justify;">Integrate Disparate Data Sources: Facilitate seamless data integration.</li>
+                            <li style="text-align: justify;">Support Data Analysis: Enable comprehensive data analysis.</li>
+                            <li style="text-align: justify;">Aid Decision-Making: Provide tools for informed decision-making.</li>
                         </ul>
-                        <p>The FAIR Health Informatics framework emphasizes the need for information systems to adhere to the FAIR principles (Findable, Accessible, Interoperable, Reusable), ensuring that data is discoverable, accessible, and interoperable across different systems.</p>
+                        <p style="text-align: justify;">The FAIR Health Informatics framework emphasizes the need for information systems to adhere to the FAIR principles (Findable, Accessible, Interoperable, Reusable), ensuring that data is discoverable, accessible, and interoperable across different systems.</p>
 					</div>
 					<div class="col-md-4 to-animate">
                         <img src="images/blog/image2.png" class="img-responsive img-rounded" alt="What Makes Up Information Systems?, Eternal Sunshine of the IS Mind, n.d.">
@@ -112,14 +151,14 @@
 				<div class="row row-bottom-padded-lg">
 					<div class="col-md-8 to-animate">
 						<h2>C. Interoperability</h2>
-						<p>Interoperability allows different information systems, software applications, and devices to exchange and use data seamlessly. This is essential for:
+						<p style="text-align: justify;">Interoperability allows different information systems, software applications, and devices to exchange and use data seamlessly. This is essential for:
 						</p>
                         <ul>
-                            <li>Integrating Data from Diverse Sources: Combining data from EHRs, clinical trials, sensors, and publications.</li>
-                            <li>Standardization and Ontological Representations: Ensuring data from various stakeholders can be effectively exchanged and utilized.</li>
-                            <li>Data Correlation and Linkage: Enabling stakeholders to derive insights from integrated data sources.</li>
+                            <li style="text-align: justify;">Integrating Data from Diverse Sources: Combining data from EHRs, clinical trials, sensors, and publications.</li>
+                            <li style="text-align: justify;">Standardization and Ontological Representations: Ensuring data from various stakeholders can be effectively exchanged and utilized.</li>
+                            <li style="text-align: justify;">Data Correlation and Linkage: Enabling stakeholders to derive insights from integrated data sources.</li>
                         </ul>
-                        <p>Siddiqi et al. (2023) highlight the importance of standardization to achieve interoperability and facilitate effective data exchange and utilization.</p>
+                        <p style="text-align: justify;">Siddiqi et al. (2023) highlight the importance of standardization to achieve interoperability and facilitate effective data exchange and utilization.</p>
 					</div>
 					<div class="col-md-4 to-animate">
 
@@ -138,9 +177,9 @@
 					<div class="col-md-6 to-animate">
 						<h2>A. Health Information System (HIS) Models</h2>
                         <ul>
-                            <li>Components-Based Models: These models break down HIS into distinct components like data collection, storage, processing, and dissemination. The HIMSS framework categorizes HIS components into clinical, administrative, and decision support systems, facilitating a modular understanding of HIS architecture (HIMSS, n.d.).</li>
-                            <li>Integrated Care Models: These models focus on coordinating healthcare services across different settings and stakeholders. AHIMA emphasizes the need for interoperability within HIS to enable information exchange and collaborative care delivery. Models like Continuity of Care Record (CCR) and Continuity of Care Document (CCD) standardize patient information exchange to enhance care coordination (AHIMA, n.d.).</li>
-                            <li>Process-Based Models: These models optimize workflows by aligning HIS with clinical processes. By mapping healthcare workflows, these models identify opportunities for automation and decision support. The Theory of Constraints (TOC) framework helps mitigate bottlenecks in information flow, enhancing system efficiency (Gupta et al., 2012).</li>
+                            <li style="text-align: justify;">Components-Based Models: These models break down HIS into distinct components like data collection, storage, processing, and dissemination. The HIMSS framework categorizes HIS components into clinical, administrative, and decision support systems, facilitating a modular understanding of HIS architecture (HIMSS, n.d.).</li>
+                            <li style="text-align: justify;">Integrated Care Models: These models focus on coordinating healthcare services across different settings and stakeholders. AHIMA emphasizes the need for interoperability within HIS to enable information exchange and collaborative care delivery. Models like Continuity of Care Record (CCR) and Continuity of Care Document (CCD) standardize patient information exchange to enhance care coordination (AHIMA, n.d.).</li>
+                            <li style="text-align: justify;">Process-Based Models: These models optimize workflows by aligning HIS with clinical processes. By mapping healthcare workflows, these models identify opportunities for automation and decision support. The Theory of Constraints (TOC) framework helps mitigate bottlenecks in information flow, enhancing system efficiency (Gupta et al., 2012).</li>
                         </ul>
 					</div>
 				</div>
@@ -150,13 +189,13 @@
                         <div class="col-md-8 to-animate">
                             <h2>B. Theories of Data Exchange and Integration</h2>
                             <ul>
-                                <li>Interoperability Theories: The "Four Levels of Interoperability" framework by the ONC categorizes interoperability into foundational, structural, semantic, and organizational levels. Higher interoperability levels support meaningful data exchange and clinical decision-making (ONC, n.d.).</li>
-                                <li>Standards-Based Approaches: Standards like HL7's Fast Healthcare Interoperability Resources (FHIR) provide frameworks for encoding, exchanging, and retrieving healthcare information electronically. Adhering to these standards ensures system compatibility and promotes data liquidity (HL7, n.d.).</li>
-                                <li>Data Integration Theories: The Extract, Transform, Load (ETL) process consolidates heterogeneous data sources into a unified repository. Service-Oriented Architecture (SOA) promotes modularization and reusability of data services, enabling flexible data integration within HIS environments (Inmon et al., 2001; Papazoglou et al., 2007).</li>
+                                <li style="text-align: justify;">Interoperability Theories: The "Four Levels of Interoperability" framework by the ONC categorizes interoperability into foundational, structural, semantic, and organizational levels. Higher interoperability levels support meaningful data exchange and clinical decision-making (ONC, n.d.).</li>
+                                <li style="text-align: justify;">Standards-Based Approaches: Standards like HL7's Fast Healthcare Interoperability Resources (FHIR) provide frameworks for encoding, exchanging, and retrieving healthcare information electronically. Adhering to these standards ensures system compatibility and promotes data liquidity (HL7, n.d.).</li>
+                                <li style="text-align: justify;">Data Integration Theories: The Extract, Transform, Load (ETL) process consolidates heterogeneous data sources into a unified repository. Service-Oriented Architecture (SOA) promotes modularization and reusability of data services, enabling flexible data integration within HIS environments (Inmon et al., 2001; Papazoglou et al., 2007).</li>
                             </ul>
                             <br>
-                            <p>By synthesizing insights from the FAIR Health Informatics framework and relevant literature, we construct a theoretical framework that elucidates the key concepts of data management, information systems, and interoperability in healthcare informatics. This framework highlights the importance of effective data management, leveraging robust information systems, and ensuring interoperability to facilitate data-driven decision-making and improve healthcare outcomes.</p>
-                            <p>Leveraging models and theories of HIS and data integration, healthcare organizations can design efficient HIS architectures, implement interoperable systems, and optimize data integration processes, supporting high-quality patient care and clinical decision-making.</p>
+                            <p style="text-align: justify;">By synthesizing insights from the FAIR Health Informatics framework and relevant literature, we construct a theoretical framework that elucidates the key concepts of data management, information systems, and interoperability in healthcare informatics. This framework highlights the importance of effective data management, leveraging robust information systems, and ensuring interoperability to facilitate data-driven decision-making and improve healthcare outcomes.</p>
+                            <p style="text-align: justify;">Leveraging models and theories of HIS and data integration, healthcare organizations can design efficient HIS architectures, implement interoperable systems, and optimize data integration processes, supporting high-quality patient care and clinical decision-making.</p>
                         </div>
                         <div class="col-md-4 to-animate">
     
@@ -170,7 +209,7 @@
 			<div class="container">
 				<div class="row row-bottom-padded-sm">
 					<div class="col-md-12">
-						<p class="copyright text-center">&copy; 2024 Free <a href="index.html">5Nurses-Informatique</a>. All Rights Reserved.</p>
+						<p class="copyright text-center">&copy; 2024 Free <a href="index.html">5Nurses-Informatique</a>. All Rights Reserved. <a href="references.html" target="_blank">References</a></p>
 							<!--<br> Free HTML5 Template by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> | Images by <a href="http://pexels.com/" target="_blank">Pexels</a> &amp;  <a href="http://unsplash.com/" target="_blank">Unsplash</a></p>-->
 					</div>
 				</div>
