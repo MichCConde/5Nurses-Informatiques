@@ -57,27 +57,28 @@
 
 		<div id="slider" data-section="home">
 			<div class="owl-carousel owl-carousel-fullwidth">
-				<div class="item" style="background-color: #8d3fcf;">
-					<div class="overlay"></div>
+				<div class="item" style="background-color: #000;">
 					<div class="container" style="position: relative;">
 						<div class="row">
-							<!--<video autoplay muted loop id="myVideo" class="layer">
-								<source src="video\Informatics Video.mp4" type="video/mp4">
-								Your browser does not support HTML5 video.
-							</video>-->
+							<video autoplay muted loop id="myVideo">
+								<source src="video\video-background.mp4" type="video/mp4">
+							</video>
 							<div class="col-md-8 col-md-offset-2 text-center">
 								<div class="fh5co-owl-text-wrap">
 									<div class="fh5co-owl-text">
 										<h1 class="fh5co-lead to-animate">LEARN MORE ABOUT HEALTH INFORMATICS</h1>
 										<h2 class="fh5co-sub-lead to-animate">By 5Nurses-Informatique</h2>
-										<p class="to-animate-2"><a href="https://drive.google.com/file/d/1e_F22XPTh2VbaUgrruxuiJxRo6GCMHu_/view?usp=sharing" class="btn btn-primary btn-lg glightbox">Watch This Video</a></p>
+										<p class="to-animate-2">
+											<a href="javascript:void(0);" class="btn btn-primary btn-lg glightbox video-player">Watch This Video</a>
+										</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="item" style="background-color: #223ccf;">
+
+				<div class="item" style="background-color: #000;">
 					<div class="container" style="position: relative;">
 						<div class="row">
 							<div class="col-md-7 col-sm-7">
@@ -89,8 +90,28 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
-								<div class="iphone to-animate-2"><img src="images/iphone-2.png" alt="#"></div>
+							<div class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 hero-graphic-image">
+								<div class="hero-graphic to-animate-2"><img src="images\hero-section\test1.png" alt="#"></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- You may change the background color here.  -->
+				<div class="item" style="background: #000;">
+					<div class="container" style="position: relative;">
+						<div class="row">
+							<div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5">
+								<div class="fh5co-owl-text-wrap">
+									<div class="fh5co-owl-text">
+										<h1 class="fh5co-lead to-animate">WHAT IS HEALTH INFORMATICS?</h1>
+										<h2 class="fh5co-sub-lead to-animate">This field spans various aspects of healthcare data management, including electronic health records (EHRs), health data analytics, and interoperability standards such as HL7 and FHIR (Sutner & DelVecchio, 2018).</h2>
+										<p class="to-animate-2"><a href="#" class="btn btn-primary btn-lg">Learn More</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-md-pull-7 col-sm-4 col-sm-pull-7 hero-graphic-image">
+								<div class="hero-graphic to-animate-2"><img src="images\hero-section\test2.png" alt="#"></div>
 							</div>
 						</div>
 					</div>
@@ -98,9 +119,18 @@
 			</div>
 		</div>
 
-		<div id="fh5co-about-us" data-section="about">
+		<!--Video Pop Up-->
+		<div class="container">
+			<div class="popup-video">
+				<span>&times;</span>
+				<iframe id="myVideo" src="https://www.youtube.com/embed/AgPiStttxGk?si=HuhEkzQ4zsKpJ-7d" allow="autoplay;" allowfullscreen></iframe>
+			</div>
+		</div>
+		<!--Video Pop Up End-->
+
+		<div id="fh5co-historical-background" data-section="about">
 			<div class="container">
-				<div class="row row-bottom-padded-lg" id="about-us">
+				<div class="row row-bottom-padded-lg" id="historical-background">
 					<div class="col-md-12 section-heading text-center">
 						<h2 class="to-animate">Theoretical Framework of Health Informatics</h2>
 						<div class="row">
@@ -128,7 +158,7 @@
 				</div>
 			</div>
 
-            <div class="container" id="about-us">
+            <div class="container" id="historical-background">
 				<div class="row row-bottom-padded-lg">
 					<div class="col-md-8 to-animate">
 						<h2>B. Information Systems</h2>
@@ -147,7 +177,7 @@
 				</div>
 			</div>
 
-			<div class="container" id="about-us">
+			<div class="container" id="historical-background">
 				<div class="row row-bottom-padded-lg">
 					<div class="col-md-8 to-animate">
 						<h2>C. Interoperability</h2>
@@ -167,7 +197,7 @@
 			</div>
 
             <div class="container">
-				<div class="row row-bottom-padded-lg" id="about-us">
+				<div class="row row-bottom-padded-lg" id="historical-background">
 					<div class="col-md-12 section-heading text-center">
 						<h2 class="to-animate">Models and Theories</h2>
 					</div>
@@ -184,7 +214,7 @@
 					</div>
 				</div>
 
-                <div class="container" id="about-us">
+                <div class="container" id="historical-background">
                     <div class="row row-bottom-padded-lg">
                         <div class="col-md-8 to-animate">
                             <h2>B. Theories of Data Exchange and Integration</h2>

@@ -361,11 +361,11 @@
 
 	};
 
-	// Pricing
+	// applications
 	var pricingAnimate = function() {
 
-		if ( $('#fh5co-pricing').length > 0 ) {	
-			$('#fh5co-pricing .to-animate').each(function( k ) {
+		if ( $('#fh5co-applications-informatics').length > 0 ) {	
+			$('#fh5co-applications-informatics .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -379,14 +379,14 @@
 	};
 	var pricingWayPoint = function() {
 
-		if ( $('#fh5co-pricing').length > 0 ) {
-			$('#fh5co-pricing').waypoint( function( direction ) {
+		if ( $('#fh5co-applications-informatics').length > 0 ) {
+			$('#fh5co-applications-informatics').waypoint( function( direction ) {
 										
 					setTimeout(function(){
-						$('.animate-pricing-1').addClass('animated fadeIn');
+						$('.animate-applications-1').addClass('animated fadeIn');
 					}, 200);
 					setTimeout(function(){
-						$('.animate-pricing-2').addClass('animated fadeIn');
+						$('.animate-applications-2').addClass('animated fadeIn');
 					}, 300);
 					setTimeout(pricingAnimate, 700);
 					
@@ -399,7 +399,7 @@
 
 	};
 
-	// Pricing
+	// applications
 	var pressAnimate = function() {
 
 		if ( $('#fh5co-press').length > 0 ) {	
