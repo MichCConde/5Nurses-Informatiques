@@ -471,6 +471,41 @@
 
 	};
 
+	//#fh5co-legal
+	var legalAnimate = function() {
+
+		if ( $('#legal').length > 0 ) {	
+			$('#legal .to-animate').each(function( k ) {
+				
+				var el = $(this);
+				
+				setTimeout ( function () {
+					el.addClass('fadeInUp animated');
+				},  k * 200, 'easeInOutExpo' );
+				
+			});
+		}
+
+	};
+	var legalWayPoint = function() {
+
+		if ( $('#legal').length > 0 ) {
+			$('#legal').waypoint( function( direction ) {
+										
+				if( direction === 'down' && !$(this).hasClass('animated') ) {
+
+
+					setTimeout(legalAnimate, 200);
+
+					
+					$(this.element).addClass('animated');
+						
+				}
+			} , { offset: '95%' } );
+		}
+
+	};
+
 
 	
 	
@@ -492,6 +527,7 @@
 		pricingWayPoint();
 		pressWayPoint();
 		conclusionWayPoint();
+		legalWayPoint();
 
 	});
 

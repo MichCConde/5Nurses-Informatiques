@@ -283,7 +283,8 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-testimonials,
 #fh5co-applications-informatics,
 #fh5co-press,
-#fh5co-conclusion {
+#fh5co-conclusion,
+#fh5co-legal {
   padding: 3em 0;
 }
 @media screen and (max-width: 480px) {
@@ -293,7 +294,8 @@ h1, h2, h3, h4, h5, h6 {
   #fh5co-testimonials,
   #fh5co-applications-informatics,
   #fh5co-press,
-  #fh5co-conclusion {
+  #fh5co-conclusion,
+  #fh5co-legal {
     padding: 5em 0;
   }
 }
@@ -471,7 +473,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-our-services .box {
   padding: 30px;
-  background: #fff;
+  background: #141c7c;
+  border-radius: 2px;
   text-align: center;
   color: #7f7f7f;
   margin-bottom: 70px;
@@ -509,7 +512,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 #fh5co-our-services .box .icon.colored-1 {
-  background: #141c7c;
+  background: #FFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.014), 0 6px 20px 0 rgba(0, 0, 0, 0.082);
+  width: 120px;
+  margin-top: -100px;
+  margin-bottom: 50px;
 }
 #fh5co-our-services .box .step-number {
   font-size: 16px;
@@ -523,9 +530,13 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-our-services .box h3 {
   margin: 0 0 20px 0;
   padding: 0;
-  font-weight: 400;
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+}
+
+#fh5co-our-services .box ul, li, p {
   font-size: 20px;
-  color: #444;
 }
 
 #fh5co-features {
@@ -1186,11 +1197,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .img-icon {
-  padding: 10px;
+  padding: 20px;
   max-height: 150px;
   max-width: 150px;
   height: 100%;
   width: 100%;
+}
+
+.img-icon2 {
+  max-height: 200px;
+  max-width: 200px;
+  height: 100%;
+  width: 100%;
+}
+
+#fh5co-features .fh5co-service .fh5co-icon2 {
+  float: left;
+  width: 20%;
+  padding-right: 20px;
+
 }
 
 .parallax {
